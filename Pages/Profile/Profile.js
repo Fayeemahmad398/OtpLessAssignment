@@ -42,8 +42,7 @@ function showProfile() {
         </div>
         `;
     } else {
-        window.location.href = "../../Pages/signup/index.html"
-
+        window.location.href = "../../index.html"
     }
 }
 showProfile();

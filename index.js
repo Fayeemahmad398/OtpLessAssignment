@@ -5,7 +5,7 @@ function otpless(otplessUser) {
     localStorage.setItem("user", JSON.stringify(otplessUser));
     alert("Congratulations, You have successfully logged in!")
 
-        window.location.href = "../Profile/profile.html";
+    window.location.href = "./Pages/Profile/profile.html";
 
 }
 
