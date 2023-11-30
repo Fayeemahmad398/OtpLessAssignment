@@ -9,30 +9,30 @@ console.log(info);
 
 function showProfile() {
     let userData = JSON.parse(localStorage.getItem("user"));
-
+    console.log(userData)
     if (userData) {
         info.innerHTML = `
       <div class="information">
-            <h2>
-                Hi! Mr ${userData.email.name}
-            </h2>
+            <h3>
+            Hello!    ${userData?.email?.name ?? userData?.email?.email}
+            </h3>
             <div class="infoDiv">
                 <div>
                     Email
                     <strong class="email">
-                        :${userData.email.email}
+                        :${userData?.email?.email}
                     </strong>
                 </div>
                 <div>
                     WhatsAppNo:
                     <strong class="WhatsAppNo">
-                        ${userData.waNumber}
+                        ${userData?.waNumber}
                     </strong>
                 </div>
                 <div>
                     Last Activity at:
                     <strong class="LastActive">
-                        ${userData.timestamp
+                        ${userData?.timestamp
             }
                     </strong>
                 </div>
