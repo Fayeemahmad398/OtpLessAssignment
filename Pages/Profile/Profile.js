@@ -13,10 +13,10 @@ function showProfile() {
     if (userData) {
         info.innerHTML = `
       <div class="information">
-            <h1>
+            <h2>
                 Hi! Mr ${userData.email.name}
-            </h1>
-            <div>
+            </h2>
+            <div class="infoDiv">
                 <div>
                     Email
                     <strong class="email">
